@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="icon" href="favicon.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+            background-image:url('bg_img.jpg');
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+            background-position:center;
+            color:whitesmoke;
+            font-family:Arial;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <input type="text" name="todo" id="todo" minlength="1" class="w-10/12 mx-auto block bg-black text-green-400 p-2 m-2 rounded-xl text-center border-8 border-solid border-white active:border-dotted" placeholder="Enter The Todo ...">
+    <br>
+    <button class="border-2 border-solid border-white bg-green-400 text-white p-4 m-2 rounded-full block mx-auto hover:opacity-50 active:bg-blue-400" onclick="add_todo()">Add Todo</button><br>
+    <div id="container" class="border-2 border-double border-white w-11/12 sm:w-10/12 mx-auto rounded-full overflow-hidden">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
